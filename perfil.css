@@ -127,7 +127,7 @@ input[type='file']{
   text-align: center;
 }
 
-.dados{
+.mais-dados{
   padding-top: 10px;
   display: grid;
   grid-template-rows: 1fr .3fr;
@@ -166,7 +166,7 @@ input[type='file']{
   display: inline;
 }
 
-.dados img{
+.mais-dados img{
   margin-right: 2px;
   margin: 2px 0px;
   width: 15px;
@@ -445,34 +445,23 @@ form>div{
   100%{transform: scale(1,1);}
 }
 
-
-@media(max-width: 522px) {
+@media (max-width: 518px) {
   .container-perfil{
-    height: 55vh;
-    flex-direction: column;
+    height: 500px;
+    justify-content: center;
   }
-  .container-seg{
-    margin-right: 50px;
+  .dados{
+    padding: 0px 100%; 
+    margin-right: 30px;
+
+  }
+  .container-image-perfil{
+    margin-top: 10px;
   }
 }
 
-@media(max-width:810px){ 
-  #container-compartilhar>div{
-    grid-template-rows: 3rem 1fr;
-  }
-  #container-compartilhar{
-    height: 20vh;
-  }
-}
-
-@media(min-width:1250px){
-  #container-compartilhar{
-    height:30vh;
-  }
-}
-
-@media(min-width:1600px){
-  #container-compartilhar{
-    height:35vh;
+@media (min-height: 721px){
+  .container-perfil{
+    height: 350px;
   }
 }
