@@ -1,12 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="perfil.css">
   <title>Perfil</title>
 </head>
+
 <body>
-  
+  <header>
+    <div class="container-header">
+      <a href="#"><img class="voltar" src="image/seta.png" alt="voltar"></a>
+      <h1>Perfil</h1>
+    </div>
+  </header>
+
+  <main>
+    <!--Compartihar-->
+    <div id="container-compartilhar">
+      <div>
+        <!--Sair do compartilhamento-->
+        <div class="container-sair-comp">
+          <img id="sair-comp" src="image/x-lg.svg" alt="sair">
+        </div>
+        <!--Redes a compartilhar-->
+        <section id="redes-sociais">
+          <a href="#"><img src="image/logo-instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="image/logo-twitter.jpg" alt="Twitter"></a>
+          <a href="#"><img src="image/logo-facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="image/logo-whatsapp.jpg" alt="Whatsapp"></a>
+        </section>
+      </div>
+    </div>
+    <!--Editar-->
+    <div id="container-edit">
+      <!--Sair do editar-->
+      <div class="container-sair-edit">
+        <img id="sair-edit" src="image/x-lg.svg" alt="sair">
+      </div>
+      <!-- Editar perfil-->
+      <p class="titulo">Editar perfil</p>
+      <div class="editar-foto">
+        <img class="img-alterar-foto" src="image/person-circle.svg" alt="alterar-perfil">
+        <a id="alterar-foto" href="#">Alterar foto do perfil</a>
+      </div>
+      <div class="container-form">
+        <form>
+          <div>
+            <label for="nome">Nome</label><br>
+            <input class="input" type="text" name="nome">
+          </div>
+          <div>
+            <label for="nome-usuario">Nome de usuário</label><br>
+            <input class="input" type="text" name="nome-usuario">
+          </div>
+          <div>
+            <label for="sobre-mim">Sobre mim</label><br>
+            <input class="input" type="text" name="sobre-mim">
+          </div>
+          <div>
+            <label for="localização">Localização</label><br>
+            <input class="input" type="text" name="localizacao">
+          </div>
+          <div class="container-atualizar">
+            <a id="atualizar-perfil" href="#">Atualizar</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--Perfil-->
+    <section class="container-perfil">
+      <!--Foto-->
+      <div class="container-image-perfil">
+        <img id="img-perfil" src="image/pexels-andrea-piacquadio-774095.jpg" alt="imagem-perfil">
+      </div>
+      <input type="file" id="flImage" name="flImage" accept="image/*">
+      <section>
+        <div>
+          <!--Nome/Nome-usuario-->
+          <p class="nome">Júlia Cavalcanti</p>
+          <p class="nome-usuario">@juliacavalcanti</p>
+          <!--Imagem Compartilhar/Editar-->
+          <div class="container-opcoes">
+            <div class="container-compartilhar">
+              <img id="compartilhar" src="image/compartilhar.png" alt="compartilhar">
+            </div>
+            <div class="container-editar">
+              <img id="editar" src="image/editar-texto.png" alt="editar-perfil">
+            </div>
+          </div>
+        </div>
+        <!--Seguindo/Seguidores-->
+        <div class="container-seg">
+          <div class="seguindo">
+            <p>3.500</p>
+            <p class="parag-seg">Seguindo</p>
+          </div>
+          <div class="seguidores">
+            <p>4.000</p>
+            <p class="parag-seg">Seguidores</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="dados">
+      <div class="sobre-mim">
+        <p class="subtitulo">Sobre mim</p>
+        <p class="frase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut magnam voluptatibus, voluptas
+          sapiente nulla incidunt molestias. Voluptatum quae ipsum qui beatae, asperiores quam sequi dolores culpa quasi
+          laboriosam quidem! Illum?</p>
+      </div>
+      <div class="container-localizacao">
+        <div class="localizacao">
+          <img src="image/localizador-de-mapa.png" alt="localizacao">
+          <p class="local">Recife, Pernambuco</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="conquistas">
+      <p class="subtitulo topicos">Minhas conquistas</p>
+      <div class="container-conquistas">
+        <div class="card-conq">
+          <img src="image/abelhas.png" alt="convites">
+          <p>Convidei +5<br>amigos pra<br>plataforma</p>
+        </div>
+        <div class="card-conq">
+          <img src="image/abelhas(1).png" alt="grupos">
+          <p>Criei meu<br>primeiro grupo<br>de estudos</p>
+        </div>
+        <div class="card-conq">
+          <img src="image/colmeia.png" alt="premios">
+          <p>Ganhei mais de<br>100 potes de<br>mel</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="grupos-criados">
+      <div class="topicos">
+        <p class="subtitulo">Grupos que Criei</p>
+        <a href="#">ver mais</a>
+      </div>
+      <div class="container-grupo">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+    <section class="grupos-inseridos">
+      <div class="topicos">
+        <p class="subtitulo">Grupos que faço parte</p>
+        <a href="#">ver mais</a>
+      </div>
+      <div class="container-grupo">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
